@@ -83,8 +83,8 @@ div.sticky {
 }
 #imageDiv {
   margin: auto;
-  position: center;
   max-width: 80%;
+  padding-top: 90px;
   height: auto;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -159,4 +159,11 @@ p {
 #sheetMusic {
   position: absolute;
   z-index: 10;
+}
+#startAndStopButtons {
+  display: flex;
+  flex-direction: row;
+}
+form {
+  width: auto;
 }

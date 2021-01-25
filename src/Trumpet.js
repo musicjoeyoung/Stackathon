@@ -16,15 +16,15 @@ function play(pitch, pic, note) {
   const synth = new Tone.Synth().toDestination();
   synth.triggerAttackRelease(pitch, duration);
   console.log(`Playing concert pitch ${pitch}`);
+
   changePicture(pic, duration);
-  //hello();
   changeNote(note, duration);
 }
 
 function changePicture(pic, duration) {
   const imgElem = document.querySelector("#defaultTrumpetImg");
 
-  let src = `/public/images/${pic}valvesDown.png`;
+  let src = `/images/${pic}valvesDown.png`;
   let originalSrc = imgElem.getAttribute("src");
 
   imgElem.setAttribute("src", src);
@@ -34,13 +34,11 @@ function changePicture(pic, duration) {
     playing = false;
   }, duration * 1000);
 }
-function hello() {
-  console.log("hello world");
-}
+
 function changeNote(note, duration) {
   const imgElem = document.querySelector("#chromaticNotes");
 
-  let noteSrc = `/public/images/chromaticPitchesNotated/Trumpet-Chromatic-${note}.png`;
+  let noteSrc = `/images/chromaticPitchesNotated/Trumpet-Chromatic-${note}.png`;
   let originalNote = imgElem.getAttribute("src");
 
   imgElem.setAttribute("src", noteSrc);
