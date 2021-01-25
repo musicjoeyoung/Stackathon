@@ -16,9 +16,9 @@ function play(pitch, pic, note) {
   const synth = new Tone.Synth().toDestination();
   synth.triggerAttackRelease(pitch, duration);
   console.log(`Playing concert pitch ${pitch}`);
-  /*   changePicture(pic, duration);
-  hello();
-  changeNote(note, duration); */
+  changePicture(pic, duration);
+  //hello();
+  changeNote(note, duration);
 }
 
 function changePicture(pic, duration) {
@@ -75,127 +75,127 @@ function Home() {
       <div className="flex-container">
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/gb3.jpg" />
-          <button onClick={play("E3", "all", "1")}>Play</button>
+          <button onClick={() => play("E3", "all", "1")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/g3.jpg" />
-          <button onClick={play("F3", "1and3", "2")}>Play</button>
+          <button onClick={() => play("F3", "1and3", "2")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/ab3.jpg" />
-          <button onClick={play("F#3", "2and3", "3")}>Play</button>
+          <button onClick={() => play("F#3", "2and3", "3")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/a3.png" />
-          <button onClick={play("G3", "1and2", "4")}>Play</button>
+          <button onClick={() => play("G3", "1and2", "4")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/bb3.png" />
-          <button onClick={play("G#3", "1", "5")}>Play</button>
+          <button onClick={() => play("G#3", "1", "5")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/b3.png" />
-          <button onClick={play("A3", "2", "6")}>Play</button>
+          <button onClick={() => play("A3", "2", "6")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/c4.jpg" />
-          <button onClick={play("A#3", "0", "7")}>Play</button>
+          <button onClick={() => play("A#3", "0", "7")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/db4.jpg" />
-          <button onClick={play("B3", "all", "8")}>Play</button>
+          <button onClick={() => play("B3", "all", "8")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/d4.jpg" />
-          <button onClick={play("C4", "1and3", "9")}>Play</button>
+          <button onClick={() => play("C4", "1and3", "9")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/eb4.jpg" />
-          <button onClick={play("C#4", "2and3", "10")}>Play</button>
+          <button onClick={() => play("C#4", "2and3", "10")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/e4.jpg" />
-          <button onClick={play("D4", "1and2", "11")}>Play</button>
+          <button onClick={() => play("D4", "1and2", "11")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/f4.jpg" />
-          <button onClick={play("D#4", "1", "12")}>Play</button>
+          <button onClick={() => play("D#4", "1", "12")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/gb4.jpg" />
-          <button onClick={play("E4", "2", "13")}>Play</button>
+          <button onClick={() => play("E4", "2", "13")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/g4.jpg" />
-          <button onClick={play("F4", "0", "14")}>Play</button>
+          <button onClick={() => play("F4", "0", "14")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/ab4.jpg" />
-          <button onClick={play("F#4", "2and3", "15")}>Play</button>
+          <button onClick={() => play("F#4", "2and3", "15")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/a4.png" />
-          <button onClick={play("G4", "1and2", "16")}>Play</button>
+          <button onClick={() => play("G4", "1and2", "16")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/bb4.jpg" />
-          <button onClick={play("G#4", "1", "17")}>Play</button>
+          <button onClick={() => play("G#4", "1", "17")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/b4.png" />
-          <button onClick={play("A4", "2", "18")}>Play</button>
+          <button onClick={() => play("A4", "2", "18")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/c5.jpg" />
-          <button onClick={play("A#4", "0", "19")}>Play</button>
+          <button onClick={() => play("A#4", "0", "19")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/db5.jpg" />
-          <button onClick={play("B4", "1and2", "20")}>Play</button>
+          <button onClick={() => play("B4", "1and2", "20")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/d5.jpg" />
-          <button onClick={play("C5", "1", "21")}>Play</button>
+          <button onClick={() => play("C5", "1", "21")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/eb5.jpg" />
-          <button onClick={play("C#5", "2", "22")}>Play</button>
+          <button onClick={() => play("C#5", "2", "22")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/e5.jpg" />
-          <button onClick={play("D5", "0", "23")}>Play</button>
+          <button onClick={() => play("D5", "0", "23")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/f5.jpg" />
-          <button onClick={play("D#5", "1", "24")}>Play</button>
+          <button onClick={() => play("D#5", "1", "24")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/gb5.jpg" />
-          <button onClick={play("E5", "2", "25")}>Play</button>
+          <button onClick={() => play("E5", "2", "25")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/g5.png" />
-          <button onClick={play("F5", "0", "26")}>Play</button>
+          <button onClick={() => play("F5", "0", "26")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/ab5.png" />
-          <button onClick={play("F#5", "2and3", "27")}>Play</button>
+          <button onClick={() => play("F#5", "2and3", "27")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/a5.png" />
-          <button onClick={play("G5", "1and2", "28")}>Play</button>
+          <button onClick={() => play("G5", "1and2", "28")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/bb5.png" />
-          <button onClick={play("G#5", "1", "29")}>Play</button>
+          <button onClick={() => play("G#5", "1", "29")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/b5.png" />
-          <button onClick={play("A5", "2", "30")}>Play</button>
+          <button onClick={() => play("A5", "2", "30")}>Play</button>
         </div>
         <div className="item">
           <img id="noteImg" alt="" src="images/notatedPitches/c6.png" />
-          <button onClick={play("A#5", "0", "31")}>Play</button>
+          <button onClick={() => play("A#5", "0", "31")}>Play</button>
         </div>
       </div>
       <h3 id="pageGoals">Page Goals</h3>

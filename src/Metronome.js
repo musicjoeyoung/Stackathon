@@ -3,7 +3,6 @@ import React from "react";
 import * as Tone from "tone";
 import "./App.css";
 
-
 /* const osc = new Tone.Oscillator().toDestination();
 Tone.Transport.bpm.value = 70;
 // repeated event every 8th note

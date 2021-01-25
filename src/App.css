@@ -148,3 +148,15 @@ p {
 #bpmButton {
   width: 100%;
 }
+#musicStand {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+#sheetMusic {
+  position: absolute;
+  z-index: 10;
+}

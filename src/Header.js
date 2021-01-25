@@ -20,6 +20,9 @@ function Header() {
           <Link className="nav-bar-routes" to="/metronome">
             Metronome
           </Link>
+          <Link className="nav-bar-routes" to="/practiceroom">
+            Practice Room
+          </Link>
         </nav>
       </div>
     </div>
