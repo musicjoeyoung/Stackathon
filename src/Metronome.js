@@ -1,54 +1,55 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import * as Tone from "tone";
+import {
+  playMetro,
+  isStarted,
+  stopMetro,
+  options,
+} from "./helpers/metro.fn.js";
 import "./App.css";
 
-const synth = new Tone.MembraneSynth().toDestination();
-
-function stopMetro() {
-  return Tone.Transport.stop();
-}
-
-function playSynth() {
-  synth.triggerAttackRelease("C1", "8n");
-}
-
 function Metronome() {
-  /* const [bpm, setBPM] = useState(Tone.Transport.bpm.value); */
+  const [bpm, setBPM] = useState(Tone.Transport.bpm.value);
+  const [subDivision, setSubDivision] = useState(4);
 
-  function submitBPM() {
-    const bpm = document.getElementById("bpmInput").value;
-    Tone.Transport.bpm.value = bpm;
-    console.log(bpm);
-    playMetro(bpm);
-  }
-
-  function playMetro(bpm) {
-    const osc = new Tone.Oscillator().toDestination();
-    bpm = Tone.Transport.bpm.value;
-    console.log(bpm);
-    Tone.Transport.scheduleRepeat((time) => {
-      osc.start(time).stop(time + 0.1);
-    }, "4n");
-    return Tone.Transport.start();
-  }
+  useEffect(() => {
+    if (isStarted()) {
+      playMetro(bpm, subDivision);
+    }
+  }, [bpm, subDivision]);
 
   return (
     <div className="metronome">
-      <button onClick={playSynth}>press me</button>
-      {/* <button onClick={playMetro}>metronome</button> */}
-      Beats Per Minute
       <form>
-        <input
-          id="bpmInput"
-          type="number"
-          name="number"
-          min="20"
-          max="240"
-
-          /* onChange={() => bpm} */
-        />
+        <label>
+          Beats Per Minute
+          <input
+            id="bpmInput"
+            type="number"
+            name="number"
+            min="20"
+            max="240"
+            value={bpm}
+            onChange={(event) => setBPM(event.target.value)}
+          />
+        </label>
+        <label>
+          subDivision
+          <select
+            value={subDivision}
+            onChange={(event) => setSubDivision(event.target.value)}
+          >
+            {options.map((option) => (
+              <option key={option}>{option}</option>
+            ))}
+          </select>
+        </label>
       </form>
-      <button id="bpmButton" type="button" onClick={() => submitBPM()}>
+      <button
+        id="bpmButton"
+        type="button"
+        onClick={() => playMetro(bpm, subDivision)}
+      >
         Enter BPM & Play
       </button>
       <button onClick={stopMetro}>stop</button>

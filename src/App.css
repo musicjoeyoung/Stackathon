@@ -28,9 +28,10 @@
 
 .metronome {
   position: relative;
-  border: 1rem black;
+  border: 3px solid #000000;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
   padding: 50px;
   width: 12.5%;
   padding-top: 50px;
@@ -150,11 +151,17 @@ p {
   width: 100%;
 }
 #musicStandDiv {
+}
+#musicStandDiv .container {
   position: relative;
+  background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fa.1stdibscdn.com%2FarchivesE%2Fupload%2F1121189%2Ff_58962631478609847977%2F5896263_z.jpg&f=1&nofb=1);
+  background-size: 1050px;
+  min-height: 650px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding: 40px 0;
 }
 #musicStand {
-  position: absolute;
-  display: block;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -168,20 +175,33 @@ p {
 form {
   width: auto;
 }
-/* .react-pdf__Document {
-  width: 50%;
-  height: 50%;
-  margin-left: 25%;
-  margin-right: auto;
-} */
-
+#practiceRoomMetronome {
+  position: fixed;
+  margin-top: 100px;
+  top: 0;
+  right: 0;
+  width: 300px;
+}
 .react-pdf__Page__canvas {
   display: block;
   user-select: none;
-  padding-top: 15px;
-  width: 40%;
-  height: 40%;
-  /* align-items: center; */
-  margin-left: auto;
-  margin-right: auto;
+  width: 100% !important;
+  height: 100% !important;
+}
+.react-pdf__Page {
+  transition: 0.3s transform;
+  cursor: pointer;
+}
+.react-pdf__Page:hover {
+  transform: scale(2.5) translateY(50px);
+}
+
+.pdf-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  margin: auto;
+  width: 200px;
+  height: 200px;
 }

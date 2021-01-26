@@ -6,14 +6,14 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 function PDF() {
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
+  const [pageNumber /* setPageNumber */] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
   }
 
   return (
-    <div>
+    <div className="pdf-container">
       <Document file="etude2.pdf" onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} />
       </Document>
