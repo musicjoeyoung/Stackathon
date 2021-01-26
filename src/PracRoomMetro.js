@@ -8,7 +8,7 @@ import {
 } from "./helpers/metro.fn.js";
 import "./App.css";
 
-function Metronome() {
+function PracticeRoomMetronome() {
   const [bpm, setBPM] = useState(Tone.Transport.bpm.value);
   const [subDivision, setSubDivision] = useState(4);
 
@@ -19,7 +19,7 @@ function Metronome() {
   }, [bpm, subDivision]);
 
   return (
-    <div className="metronome">
+    <div className="practiceroommetronome">
       <form>
         <label>
           Beats Per Minute
@@ -59,4 +59,4 @@ function Metronome() {
   );
 }
 
-export default Metronome;
+export default PracticeRoomMetronome;

@@ -21,12 +21,4 @@ export function isStarted() {
   return Tone.Transport.state === "started";
 }
 
-export const options = [
-/*   ...Array(20)
-    .fill(null)
-    .map((n, index) => index + 1),
-  "this",
-  "and this",
-  "custom value", */
-  4,8,16
-];
+export const options = [2, 4, 8, 16];

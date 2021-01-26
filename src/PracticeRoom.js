@@ -1,18 +1,20 @@
 import React, { Component } from "react";
-import Metronome from "./Metronome";
+import PracticeRoomMetronome from "./PracRoomMetro";
 import PDF from "./PDF";
 import "./App.css";
 
 export class PracticeRoom extends Component {
   render() {
     return (
-      <div id="musicStandDiv">
-        <h1>Virtual Practice Room</h1>
-        <div className="container">
-          <PDF />
+      <div>
+        <div id="musicStandDiv">
+          <h1>Virtual Practice Room</h1>
+          <div className="container">
+            <PDF />
+          </div>
         </div>
-        <div id="practiceRoomMetronome">
-          <Metronome />
+        <div>
+          <PracticeRoomMetronome id="practiceroommetronome" />
         </div>
       </div>
     );

@@ -26,18 +26,6 @@
   width: 70%;
 }
 
-.metronome {
-  position: relative;
-  border: 3px solid #000000;
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  padding: 50px;
-  width: 12.5%;
-  padding-top: 50px;
-  margin-left: 40%;
-}
-
 .main-container {
   position: sticky;
   background-color: #f8f8f8;
@@ -150,8 +138,7 @@ p {
 #bpmButton {
   width: 100%;
 }
-#musicStandDiv {
-}
+
 #musicStandDiv .container {
   position: relative;
   background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fa.1stdibscdn.com%2FarchivesE%2Fupload%2F1121189%2Ff_58962631478609847977%2F5896263_z.jpg&f=1&nofb=1);
@@ -175,13 +162,41 @@ p {
 form {
   width: auto;
 }
-#practiceRoomMetronome {
-  position: fixed;
-  margin-top: 100px;
-  top: 0;
-  right: 0;
-  width: 300px;
+.metronome {
+  position: relative;
+  border: 3px solid #000000;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 50px;
+  width: 12.5%;
+  padding-top: 50px;
+  margin-left: 40%;
 }
+.practiceroommetronome {
+  border: 3px solid #000000;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 50px;
+  padding-top: 50px;
+  height: 305px;
+  width: 111px;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: 282px;
+}
+#subDiv {
+  display: block;
+}
+#bpmInput {
+  display: block;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 .react-pdf__Page__canvas {
   display: block;
   user-select: none;
@@ -204,4 +219,11 @@ form {
   margin: auto;
   width: 200px;
   height: 200px;
+}
+#subDivisionSelect {
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
