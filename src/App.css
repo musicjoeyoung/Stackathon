@@ -69,7 +69,7 @@ div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  width: 65%;
+  width: 50%;
 }
 #imageDiv {
   margin: auto;

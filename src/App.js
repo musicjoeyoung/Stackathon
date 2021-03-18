@@ -22,8 +22,8 @@ function App() {
           <Route path="/metronome">
             <Metronome />
           </Route>
-          <Route path="/signup">
-            <h2>Sign Up</h2>
+          <Route path="/resources">
+            <h2>Resources</h2>
           </Route>
           <Route path="/practiceroom">
             <PracticeRoom />

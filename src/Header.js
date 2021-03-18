@@ -14,8 +14,8 @@ function Header() {
           <Link className="nav-bar-routes" to="/trumpet">
             Trumpet
           </Link>
-          <Link className="nav-bar-routes" to="/signup">
-            Sign Up
+          <Link className="nav-bar-routes" to="/resources">
+            Resources
           </Link>
           <Link className="nav-bar-routes" to="/metronome">
             Metronome
